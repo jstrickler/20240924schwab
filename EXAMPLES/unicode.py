@@ -17,3 +17,7 @@ print()
 data = ['\U0001F95A', '\U0001F414']  # answers the age-old question (at least for Python)
 print("unsorted:", data)
 print("sorted:", sorted(data))
+
+# raw_x = b"abc"
+# x = raw_x.decode(encoding="UTF16")
+
