@@ -6,7 +6,7 @@ flag = True
 
 print(f"{city = }")    # default is raw view
 print(f"{city = !s}")  # forces normal str view
-print(f"{temp = }")
+print(f"{temp   =   }")
 print(f"{count = }")
 print(f"{count = :05d}")  # add formatting
 print(f"{avg = :.2f}")    # add formatting

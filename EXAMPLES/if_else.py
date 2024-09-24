@@ -6,7 +6,7 @@ if temp < 76:
     print("Don't go swimming")
 
 num = int(input("Enter a number: "))
-if num > 1000000:
+if num > 1_000_000:
     print(num, "is a big number")
 else:
     print("your number is", num)
