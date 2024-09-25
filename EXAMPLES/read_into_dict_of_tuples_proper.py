@@ -9,6 +9,7 @@ def main():  # named 'main' by *convention*
     """
     Program entry point
     """
+    # get data file name from config....
     info = read_knight_data(FILE_PATH)
     pretty_print_knight_data(info)
     print()

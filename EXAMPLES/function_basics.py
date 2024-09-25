@@ -2,5 +2,6 @@
 def say_hello():
     print("Hello, world")
 
-say_hello()  # Call function
+x = say_hello()  # Call function
+print(f"{x = }")
 

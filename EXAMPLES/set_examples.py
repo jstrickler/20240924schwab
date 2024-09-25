@@ -6,6 +6,12 @@ set1 = set(set1data)
 set2 = set(set2data)
 
 set1.add('taupe')  # add element to set (ignored if already in set)
+set1.add('taupe')
+set1.add('taupe')
+set1.add('taupe')
+set1.add('taupe')
+set1.add('taupe')
+set1.add('taupe')
 
 print(f"{set1 = }")
 print(f"{set2 = }")
@@ -23,4 +29,7 @@ print(f"{food = }")
 print()
 
 unique_food = set(food)  # Create set from iterable (e.g., list)
-print(f"{unique_food = }")
+print(f"{unique_food = }\n")
+
+print(f"{sorted(unique_food) = }\n")
+

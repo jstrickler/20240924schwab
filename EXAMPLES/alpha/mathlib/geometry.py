@@ -40,7 +40,11 @@ def square_area(side):
     """
     return side ** 2
 
-if __name__ == "__main__":
+print(f"{__name__ = }")
+
+
+if __name__ == "__main__":  # if this file is run directly, not imported
+    # only run if called as a script:
     area1 = square_area(15)
     print(f"area1: {area1}")
     
