@@ -15,9 +15,10 @@ while True:
         # log the error here...
         print("Please enter a valid number.")
     except ZeroDivisionError as err:
-        print(err)
+        err.add_note("this is more info")  # added in 3.11
+        raise err
     except Exception as err:
-        print("Huh:", err)
+        pass   # no-op
     else:
         result = value / 2
         print(f"{result = }")

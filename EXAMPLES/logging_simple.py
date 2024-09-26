@@ -1,9 +1,11 @@
 import logging
 
-logging.basicConfig(
-    filename='../LOGS/simple.log',
-    level=logging.WARNING,
-)
+LOG_LEVEL = logging.WARNING
+
+# logging.basicConfig(
+#     filename='../LOGS/simple.log',
+#     level=LOG_LEVEL,
+# )
 
 logging.warning('This is a warning') # message will be output
 logging.debug('This message is for debugging') # message will NOT be output
