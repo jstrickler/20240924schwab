@@ -8,7 +8,7 @@ Syntax:
 ensure_bark = EnsureBark()
 
 @ensure_bark  # calling instance 
-def FUNC():
+class ClassName:
     pass
 """
 
