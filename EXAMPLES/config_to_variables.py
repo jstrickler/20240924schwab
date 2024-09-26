@@ -9,3 +9,4 @@ with open(CONFIG_FILE_PATH) as config_in:
         g[name] = value  # create a new global variable
 
 print(animal, color, detective, language)
+

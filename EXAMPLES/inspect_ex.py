@@ -1,5 +1,5 @@
 import inspect
-import EXAMPLES.alpha.mathlib.geometry as geometry
+import alpha.mathlib.geometry as geometry
 from carddeck import CardDeck
 
 deck = CardDeck("Leonard")
@@ -29,8 +29,9 @@ for thing in things:
 
 
 print()
-def spam(p1, p2='a', *p3, p4, p5='b', **p6):  # define a function
-    print(p1, p2, p3, p4, p5, p6)
+def spam(p0: int, /, p1: float, p2: str='a', *p3, p4: list, p5: str='b', **p6) -> int:  # define a function
+    print(p0, p1, p2, p3, p4, p5, p6)
+    return 0
 
 # get argument specifications for a function
 print("Function spec for Ham:", inspect.getfullargspec(spam))
