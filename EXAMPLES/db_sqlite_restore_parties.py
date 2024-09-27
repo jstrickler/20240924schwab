@@ -23,8 +23,9 @@ where termnum = ?
 with sqlite3.connect("../DATA/presidents.db") as s3conn:
     s3cursor = s3conn.cursor()
 
-    for termnum, party in RESTORE_DATA:
-        s3cursor.execute(PARTY_UPDATE, [party, termnum])  # second argument to execute() is iterable of values to fill in placeholders from left to right
+    for fields in RESTORE_DATA:
+        s3cursor.execute(PARTY_UPDATE, fields)  # second argument to execute() is iterable of values to fill in placeholders from left to right
+
     s3conn.commit()
 
     for termnum, _ in RESTORE_DATA:

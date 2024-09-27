@@ -1,4 +1,3 @@
-
 import sqlite3
 
 TERMS_TO_UPDATE = [1, 5, 19, 22, 36]
@@ -26,3 +25,9 @@ with sqlite3.connect("../DATA/presidents.db") as s3conn:
     for termnum in TERMS_TO_UPDATE:
         s3cursor.execute(PARTY_QUERY, [termnum])
         print(s3cursor.fetchone())
+    print()
+
+    s3cursor.execute('select * from presidents')
+    for row in s3cursor.fetchall():
+        print(row)
+    print()

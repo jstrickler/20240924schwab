@@ -26,7 +26,7 @@ def main():
         for movie_title in MOVIE_TITLES:
             params = {'t': movie_title}
             response = session.get(OMDB_URL, params=params)
-            if response.status_code == requests.codes.OK:
+            if response.ok: # if response.status_code == requests.codes.OK:
                 raw_data = response.json()
                 keys = raw_data.keys()
                 Movie = make_dataclass("movie", keys)

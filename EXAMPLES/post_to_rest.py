@@ -4,7 +4,7 @@ import requests
 
 URL = 'http://httpbin.org/post'
 
-for i in range(3):
+for i in range(1, 4):
     response = requests.post(  # POST data to server
         URL,
         data={'date': datetime.now(),

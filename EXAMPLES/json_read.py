@@ -25,3 +25,6 @@ for group in solar:
     if group.endswith('planets'):
         for planet in solar[group]:
             print(planet['name'])
+            if planet['moons']:
+                for moon in planet['moons']:
+                    print(f"    {moon}")

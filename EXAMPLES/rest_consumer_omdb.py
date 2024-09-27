@@ -10,6 +10,7 @@ def main():
     requests_params = {'t': 'Black Panther', "apikey": OMDB_API_KEY}
     response = requests.get(OMDB_URL, params=requests_params)
     if response.status_code == requests.codes.OK:
+        # if response.headers['content-type'] == 'application/json':
         raw_data = response.json()
 
         print(f"raw_data['Title']: {raw_data['Title']}")
@@ -22,6 +23,12 @@ def main():
 
         print("raw DATA:")
         pprint(response.json())
+        print('-' * 60)
+        print("raw JSON:")
+        print(response.text)
+
+        # else:
+        #     raise Exception("Received non-JSON data")
     else:
         print(f"response.status_code: {response.status_code}")
 
