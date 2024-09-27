@@ -1,4 +1,3 @@
-
 from timeit import Timer
 
 REPEATS = 10000000

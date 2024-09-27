@@ -15,3 +15,8 @@ print('-' * 60)
 variable_name = "person"
 
 print(f"{g[variable_name] = }")
+
+g['color'] = "blue"
+print(f"{color = }")
+
+

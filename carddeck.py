@@ -41,6 +41,9 @@ class CardDeck:
         my_type = type(self)
         return f"{my_type.__name__}()"
 
+    def to_json(str):
+        return "{some JSON string...}"
+
 if __name__ == "__main__":
     d1 = CardDeck()
     d2 = CardDeck()
@@ -57,3 +60,10 @@ if __name__ == "__main__":
     
     print(f"{d1 = }")
     print(d1)    
+
+    METHOD_NAME = 'to_json'
+    if hasattr(d1, METHOD_NAME):
+        method = getattr(d1, METHOD_NAME)
+        result = method()
+        print(f"{result = }")
+        

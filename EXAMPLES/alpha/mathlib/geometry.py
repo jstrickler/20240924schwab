@@ -45,11 +45,11 @@ print(f"{__name__ = }")
 
 if __name__ == "__main__":  # if this file is run directly, not imported
     # only run if called as a script:
-    area1 = square_area(15)
-    print(f"area1: {area1}")
-    
-    area2 = circle_area(22)
-    print(f"area2: {area2}")
-    
-    area3 = rectangle_area(9, 13)
-    print(f"area3: {area3}")
+    AREA1 = square_area(15)
+    print(f"area1: {AREA1}")
+
+    AREA2 = circle_area(22)
+    print(f"area2: {AREA2}")
+
+    AREA3 = rectangle_area(9, 13)
+    print(f"area3: {AREA3}")

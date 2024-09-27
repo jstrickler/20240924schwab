@@ -1,5 +1,7 @@
 from card import Card
 from carddeck import CardDeck
+import inspect
+from pprint import pprint
 
 class JokerDeck(CardDeck):
     def _make_deck(self):
@@ -16,4 +18,5 @@ if __name__ == "__main__":
     print(f"{j.cards = }")
     print(j)
     print(f"{j = }")
-    
+
+    pprint(inspect.getclasstree([Card, JokerDeck, CardDeck]))    
